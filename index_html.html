@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="body">
+      <div class="layer" id="layer1">
+        <h2>Visit Torshov</h2>
+        <h3>
+          Enjoy Culture and Sports in this vibrant District close to the center
+          of Oslo
+        </h3>
+      </div>
+      <div class="layer" id="layer2">
+        <h2>Top three activities to do at Torshov</h2>
+        <div id="container">
+          <div>
+            <img id="img1" src="https://images.unsplash.com/photo-1508062878650-88b52897f298?q=80&w=1440&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A nice tall building">
+            <h3>Attend a show or a concert</h3>
+            <p>The Torshov Theatre is a great place to spend your night out.</p>
+          </div>
+          <div>
+            <img id="img2" src="https://images.unsplash.com/photo-1626456877396-5af019036c63?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bG9jYWwlMjBwYXJrfGVufDB8fDB8fHww" alt="A nice tall building">
+            <h3>Go for a piknic in the local park</h3>
+            <p>The Torshov Park is perfect for piknic, getting some tan, or just chilling out.</p>
+          </div>
+          <div>
+            <img id="img3" src="https://plus.unsplash.com/premium_photo-1661605536374-4fe49a2da521?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNwb3J0cyUyMGZpZWxkfGVufDB8fDB8fHww" alt="Sports field">
+            <h3>Get sweaty at the sports field</h3>
+            <p>Play volleyball, football, basketball or lift some weights</p>
+          </div>
+        </div>
+      </div>
+      <div class="layer" id="layer3">
+        <img id="img" src ="https://media.istockphoto.com/id/1911998428/photo/beautiful-business-woman-working-with-laptop-while-looking-at-camera-in-living-room-at-home.webp?a=1&b=1&s=612x612&w=0&k=20&c=GFSORjzvUsgurE_hivhfHTktS3HECZ_-8ygIqLr559Y=" alt="A beautiful woman smiling who is the tour guide">
+        <div>
+            <h2>Your Tour Guide</h2>
+            <p><em>I have lived at Torshow for over 30 years, so I can show you
+                    all of its best parts and hidden secrets.
+                </em></p>
+            <p><strong>Dionne Amber</strong></p>
+      </div>
+        </div>
+    </div>
+      </div>
+      <button id="darkmode">Dark Mode</button>
+      <button id="lightmode">Light Mode</button>
+
+      <script>
+        var body = document.getElementById('body');
+    
+        var darkmode = document.getElementById('darkmode');
+        darkmode.addEventListener('click', function() {
+          body.style.backgroundColor = '#000';
+          body.style.color = '#fff';
+        });
+    
+        var lightmode = document.getElementById('lightmode');
+        lightmode.addEventListener('click', function() {
+          body.style.backgroundColor = '#fff';
+          body.style.color = '#000';
+        });
+      </script><script>
+  var body = document.getElementById('body');
+  var layers = document.querySelectorAll('.layer');
+  var darkmode = document.getElementById('darkmode');
+  var lightmode = document.getElementById('lightmode');
+
+  darkmode.addEventListener('click', function () {
+    body.style.backgroundColor = '#000';
+    body.style.color = '#fff';
+
+    layers.forEach(function (layer) {
+      layer.style.backgroundColor = '#222'; // Dark gray for contrast
+      layer.style.color = '#fff';
+    });
+  });
+
+  lightmode.addEventListener('click', function () {
+    body.style.backgroundColor = '#fff';
+    body.style.color = '#000';
+
+    layers.forEach(function (layer) {
+      layer.style.backgroundColor = '#fdf6e3'; // Cream color
+      layer.style.color = '#000';
+    });
+  });
+</script>
+
+  </body>
+</html>

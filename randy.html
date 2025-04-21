@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="body">
+    <p>
+      As a bank that will be providing the funding for our staff members and
+      customers to buy EVs, your proposal and service level agreement for this
+      partnership should contain the following :
+    </p>
+    <button id="darkmode">Dark Mode</button>
+    <button id="lightmode">Light Mode</button>
+    <script>
+      var body = document.getElementById("body");
+
+      var darkmode = document.getElementById("darkmode");
+      darkmode.addEventListener("click", function () {
+        body.style.backgroundColor = "#000";
+        body.style.color = "#fff";
+      });
+
+      var lightmode = document.getElementById("lightmode");
+      lightmode.addEventListener("click", function () {
+        body.style.backgroundColor = "#fff";
+        body.style.color = "#000";
+      });
+    </script>
+  </body>
+</html>
